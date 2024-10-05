@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belajar html5</title>
+    <style>
+        *,html,body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav{
+            background-color: burlywood;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .egi{
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-child{
+            gap: 10px;
+            color: white;
+            margin: 10px;
+        }
+
+        .header{
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="egi">
+            <b>EGI</b>
+        </div>
+        <div class="navigation">
+            <b class="nav-child">project</b>
+            <b class="nav-child">contact</b>
+            <b class="nav-child">about me</b>
+        </div>
+    </nav>
+    <section>
+        <video src="video/batu.mp4" controls muted autoplay loop width="100%"></video>
+    </section>
+    <section>
+        <h1 class="header">pendaftaran volunter indonesia pintar</h1>
+    </section>
+
+    <form>
+        <label for="nama">nama :</label> <input type="text" placeholder="masukan nama lengkap " id="nama"/>
+        <br/> 
+        <label for="email">email :</label> <input type="email" id="email"/>
+        <br/>
+        <label for="password">password :</label> <input type="password" id="password"/>
+        <br/>
+        <label>jenis kelamin</label>
+        <br/>
+        <label for="jeniskelamin">laki-laki</label> <input type="radio" id="jeniskelamin" name="jk">
+        <label for="jeniskelamin">perempuan</label> <input type="radio" id="jeniskelamin" name="jk">
+        <br/>
+        <p>skill yang dimiliki sebagai pengajar :</p>
+        <label >bahasa inggris</label> <input type="checkbox" />
+        <br/>
+        <label >bahasa indonesia</label> <input type="checkbox" />
+        <br/>
+        <label >matematika</label> <input type="checkbox" />
+        <br/>
+        <label >ilmu pengetahuan alam</label> <input type="checkbox" />
+        <br/>
+        <p>motivasi untuk mengikuti kegiatan ini</p>
+        <textarea></textarea>
+        <br/>
+        <button>kirim </button>
+    </form>
+</body>
+</html>
